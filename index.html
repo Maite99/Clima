@@ -1,0 +1,49 @@
+<!-- OBJETIVO
+ - Crear una aplicación web que permita al usuario ingresar una ubicación y obtener el clima
+ actual de esa área utilizando la API de OpenweatherMap.
+ La prueba se realizará con HTML, CSS y JavaScript.
+
+ Requisitos:
+ Interfaz de usuario: 
+ - Un campo de entrada para que el usuario ingrese el nombre de la ciudad.
+ - Un boton para enviar la consulta. 
+ - Un área para mostrar los resultados del clima (temperatura, condiciones meteorológicas, 
+    humedad, etc.).
+ - Manejo de errores poara situaciones como ciudad no encoontrada. 
+
+ API de clima: 
+ - Utilizar la API de OpenWeatherMap para obtener los datos del clima.
+ - Necesitarás registrart y obtener una clave de API. 
+
+ Funciones: 
+ - Hacer una llamada a la API al enviar el formulario. 
+ - Procesar la respuesta y mostrar los datos de la interfaz. 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+    
+    <div class="contenedor">
+        <h1>APP DE CLIMA 🌤️</h1>
+        <form action="">
+            <input type="text" placeholder="Introduce tu ciudad" id="input-ciudad">
+            <button id="boton-enviar">Enviar</button>
+        </form>
+
+        <div class="resultado" id="resultado"></div>
+        
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
