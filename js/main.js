@@ -24,9 +24,7 @@ btnEnviar.addEventListener('click', (event) => {
 // ******    FUNCIÓN QUE LLAMA A LA API Y MUESTRA LOS RESULTADOS ********
 function getWeatherData(ciudad){
     // fetch
-    //fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=ab0bb4820922da6d82c1869f3f8112d3&units=metric&lang=es`)
-   
-    fetch(`http://localhost:3000/weather?ciudad=${ciudad}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric&lang=es`)
     // si no se encuentra la ciudad
     .then(response => {
         if(!response.ok){
